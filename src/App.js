@@ -1,3 +1,5 @@
+import storm from "./img/weather-icons/storm.svg";
+
 import React, { Component } from "react";
 import "./App.css";
 
@@ -15,7 +17,7 @@ class App extends Component {
         </header>
         <main className="app__main">
           <div>
-            <img src="https://placekitten.com/200/300" />
+            <img src={storm} alt={"stormy weather"} />
             <div>
               <h1>overcast clouds</h1>
               <div>

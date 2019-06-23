@@ -1,19 +1,15 @@
 import React from "react";
-import cloudy from "../img/weather-icons/cloudy.svg";
-import ReactDOM from "react-dom";
-
-export function FINDWEATHER() {
-  return <div>FIND WEATHER</div>;
+import "../App.css";
+class Search extends React.Component {
+  render() {
+    return (
+      <div>
+        <header className="app-header">
+          <input className="inputBar" value="london" />
+          <button className="btn">FIND WEATHER</button>
+        </header>
+      </div>
+    );
+  }
 }
-
-export function Search() {
-  return <div>search</div>;
-}
-
-export function Image() {
-  return (
-    <div>
-      <img src={cloudy} alt={"cloudy weather"} />
-    </div>
-  );
-}
+export default Search;
